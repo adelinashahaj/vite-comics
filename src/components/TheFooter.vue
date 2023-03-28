@@ -69,27 +69,28 @@ export default {
 <style lang="scss" scoped>
 @use "bootstrap";
 footer{
-    min-height: 60vh;
+  min-width: 60vh;
     background-image: url("../../public/footer-bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 
+
+
+    
 .footer_bot {
     background-color:#303030;
     z-index: 1;
-
-   
-}
-.socials {
+    .socials {
         flex-basis: 35%;
-    }
-    h3{
+        h3{
         color: #0282F9;
     }
-
-.container {
+    }
+   
+}
+.footer_top .container {
         background-image: url("../assets/dc-logo-bg.png");
         background-repeat: no-repeat;
         background-position: right;
