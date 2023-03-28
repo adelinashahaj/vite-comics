@@ -1,7 +1,7 @@
 
 <template>
   <TheHeader/>
-  
+  <Jumbotron/>
   <main>
     <div class="container">
       <ProductList />
@@ -19,6 +19,7 @@ import TheHeader from './components/TheHeader.vue';
 import TheFooter from './components/TheFooter.vue';
 import CallActionsBonus from './components/CallActionsBonus.vue';
 import ProductList from "./components/ProductList.vue";
+import Jumbotron from './components/Jumbotron.vue';
 
 
 export default{
@@ -26,7 +27,8 @@ export default{
     TheHeader,
     TheFooter,
     CallActionsBonus,
-    ProductList
+    ProductList,
+    Jumbotron
    
   }
 

@@ -70,7 +70,7 @@ export default {
 @use "bootstrap";
 footer{
     min-height: 60vh;
-    background-image: url("../assets/footer-bg.jpg");
+    background-image: url("../../public/footer-bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
