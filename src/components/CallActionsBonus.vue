@@ -1,5 +1,5 @@
 <template>
-    <section class="calltoaction py-5">
+    <section class="call_to_action  py-5">
         <div class="container">
             <div class="row row-cols-5">
                 <div class="col d-flex align-items-center justify-content-evenly" v-for="call in calls">
@@ -56,16 +56,21 @@ export default{
 <style lang="scss" scoped>
  @use "bootstrap";
 
-.calltoaction{
-    background-color:#0282F9;
+
+.call_to_action {
+    background-color: #0282F9;
+    a{
+        text-decoration: none;
+        column-gap: 0.5rem;
     
-}
-.img-fluid{
-    width: 30px;
-}
-h6{
-    color: white;
-}
+        h6 {
+            color: #FFFFFF;
+        }
 
+        img {
+            width: 50px;
+        }
 
+    }
+}
 </style>

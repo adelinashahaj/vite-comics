@@ -4,7 +4,7 @@
   
   <main>
     <div class="container">
-      
+      <ProductList />
      
     </div>
   </main>
@@ -18,13 +18,15 @@
 import TheHeader from './components/TheHeader.vue';
 import TheFooter from './components/TheFooter.vue';
 import CallActionsBonus from './components/CallActionsBonus.vue';
+import ProductList from "./components/ProductList.vue";
 
 
 export default{
   components: {
     TheHeader,
     TheFooter,
-    CallActionsBonus
+    CallActionsBonus,
+    ProductList
    
   }
 
