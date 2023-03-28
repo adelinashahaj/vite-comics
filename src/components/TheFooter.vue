@@ -75,12 +75,10 @@ footer{
     background-repeat: no-repeat;
 }
 
-.footer_bot{
-    
-    z-index: 1;
-}
+
 .footer_bot {
     background-color:#303030;
+    z-index: 1;
 
    
 }

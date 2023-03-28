@@ -3,6 +3,7 @@
         <img :src="immage" :alt="title">
         <h3>{{ title }}</h3>
     </div>
+    
 
 </template>
 

@@ -5,7 +5,9 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+body{
+    position: relative;
+}
 main {
     min-height: 10vh;
     background-color: black;

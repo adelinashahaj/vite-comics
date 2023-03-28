@@ -1,12 +1,19 @@
 <template>
+    <div class="current-btn">
+            <a href="#" class="btn text-white border border-2 border-primary">CURRENT SERIES</a>
+        </div>
     <div class="products">
 
         <div v-for="(animation, index) in animationList" class="box" :key="index">
             <ProductCard :immage="animation.thumb" :title="animation.series"/>
 
         </div>
+        
 
     </div>
+    <div class="signup">
+            <a href="#" class="btn text-white border border-2 border-primary">LOAD MORE</a>
+        </div>
 
 </template>
 
@@ -108,6 +115,19 @@ export default{
     width: calc(100% / 6);
 }
 
+}
+ .btn{
+    background-color: #0282F9;  
+}
+.current-btn .btn{
+    position: relative;
+    bottom: 17px;
+
+}
+.signup .btn{
+    position: relative;
+    left: 39%;
+    margin-bottom: 14px;
 }
 
 

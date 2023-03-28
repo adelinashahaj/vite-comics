@@ -1,8 +1,9 @@
 
 <template>
   <TheHeader/>
-  <Jumbotron/>
+  
   <main>
+    <Jumbotron/>
     <div class="container">
       <ProductList />
      
