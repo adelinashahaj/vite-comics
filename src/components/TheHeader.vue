@@ -7,7 +7,7 @@
             <img src="../assets/dc-logo.png" alt="">
             <ul class="navbar-links">
                 <li v-for="(link, i) in navLinks" :key="i">
-                    <a class="nav-link" href="link.href">{{ link.text }}</a>
+                    <a class="nav-link" :href="link.href">{{ link.text }}</a>
                 </li>
                 
             </ul>
@@ -71,7 +71,8 @@ export default{
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+
 nav{
     display: flex;
    justify-content: space-between;
@@ -92,11 +93,12 @@ nav img{
     padding: 0.5rem 1rem;
     color: black;
     text-decoration: none;
-    
-}
-.nav-link:hover{
+
+    &:hover{
     color: blue;
     text-decoration: underline;
+}
+    
 }
 
 
