@@ -1,9 +1,22 @@
 <template>
+    <div class="products">
+
+        <div v-for="(animation, index) in animationList" class="box" :key="index">
+            <ProductCard :immage="animation.thumb" :title="animation.series"/>
+
+        </div>
+
+    </div>
 
 </template>
 
 <script>
+import ProductCard from './ProductCard.vue';
 export default{
+    components: {
+        ProductCard
+
+    },
     data(){
         return{
         animationList : [
@@ -87,5 +100,15 @@ export default{
 </script>
 
 <style lang="scss" scoped>
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    & .box{
+    width: calc(100% / 6);
+}
+
+}
+
 
 </style>
